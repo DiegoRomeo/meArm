@@ -1,6 +1,7 @@
 # meArm
-![meArm](meArm1.jpeg)
-A set of programs for meArm robot arm.
+A set of programs for meArm robot arm.  
+
+![meArm](https://github.com/DiegoRomeo/meArm/blob/main/maArm1.jpeg?raw=true)
 
 ## Introduction
 The meArm robot is a famous open source robotic arm with 4 degrees of freedom.  
