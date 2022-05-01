@@ -9,6 +9,7 @@ The meArm robot is a famous open source robotic arm with 4 degrees of freedom.
 It's widely diffused as there are more than 10,000 prototypes around the world and it's mainly used for educative purposes.
 
 The purpose of this repository is to share Arduino sketches and Python scripts for meArm.
+
 ## Usage
 - [Dance](#dance)
 - [Forward Kinematics](#forward-kinematics)
