@@ -1,5 +1,6 @@
 # meArm
-A set of programs for meArm robot arm.
+A set of programs for meArm robot arm.  
+
 ![meArm](https://github.com/DiegoRomeo/meArm/blob/main/maArm1.jpeg?raw=true)
 
 ## Introduction
