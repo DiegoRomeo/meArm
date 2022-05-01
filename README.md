@@ -36,10 +36,10 @@ Upload the potentiometer_servo_control.ino to your ArduinoUno board.
 After this you can control the robot by rotating the potentiometers.
 ### Voice Control
 Upload the voice_control.ino sketch to your ArduinoUno board. 
-After this you can run the file named "voice_control.py" to control the robot using your voice.  
+After this you can run the file named "voice_control.py", which requires the language of the words to detect, to control the robot using your voice.  
 To run the python script open your terminal and run the following command:  
 ```
-$ python voice_control.py
+$ python voice_control.py <LANGUAGE ex: en, it...>
 ```
 The instruction must contain a command of the type:
 ```

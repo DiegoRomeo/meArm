@@ -1,4 +1,4 @@
-""""""
+"""A simple script to control meArm robot using your own voice"""
 import re
 import sys
 import time
@@ -7,17 +7,14 @@ import serial
 import speech_recognition as sr
 
 class ArduinoUno:
-    """
-    The class to represent an Arduino Uno board.
+    """The class to represent an Arduino Uno board.
+
+    Params:
+        port: The port to which the board is connected.
     """
 
     def __init__(self, port: str) -> None:
-        """
-        The constructor for the Arduino Uno class.
-
-        Params:
-          port: The port to which the board is connected.
-        """
+        """Inits ArduinoUno with given port"""
         self.port = serial.Serial(port, 9600)
 
     def send_to_arduino(self, input: str):
