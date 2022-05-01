@@ -1,8 +1,8 @@
 """"""
 import re
+import sys
 import time
 
-import pyaudio
 import serial
 import speech_recognition as sr
 
@@ -48,7 +48,7 @@ def parse_and_send(input: str):
         ME_ARM.send_to_arduino(cmd)
         time.sleep(0.05)
         
-def get_audio() -> str:
+def get_audio(lang: str) -> str:
     """Get audio from microphone and convert it to text.
 
     Returns:
@@ -58,6 +58,7 @@ def get_audio() -> str:
     print("Listening")
 
     r = sr.Recognizer()
+
     with sr.Microphone() as source:
         audio = r.listen(source)
 
@@ -65,7 +66,8 @@ def get_audio() -> str:
 
     try:
         print("Elaborating...")
-        said = r.recognize_google(audio, language="it")
+        said = r.recognize_google(audio, language=lang)
+
     except Exception as e:
         print("Exception: " + str(e))
 
@@ -74,7 +76,9 @@ def get_audio() -> str:
 
 if __name__ == "__main__":
     ME_ARM = ArduinoUno(port="COM13")
+
+    user_language = sys.argv[1]
     
     while True:
-        input = get_audio()
+        input = get_audio(lang=user_language)
         parse_and_send(input)
