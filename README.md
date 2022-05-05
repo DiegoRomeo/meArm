@@ -1,7 +1,7 @@
 # meArm
 A set of programs for meArm robot arm.  
 
-![meArm](https://drive.google.com/file/d/17Us_7LjWS7tqth-btFJgmNly-05kPypI/view?usp=sharing)
+![meArm](mearm.jpg)
 
 ## Introduction
 The meArm robot is a famous open source robotic arm with 4 degrees of freedom.  
