@@ -1,7 +1,8 @@
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)  
 # meArm
 A set of programs for meArm robot arm.  
 
-![meArm](mearm.jpg)
+<img src="https://github.com/DiegoRomeo/meArm/blob/main/mearm.jpg?raw=true" heigth = 800 width = 400>
 
 ## Introduction
 The meArm robot is a famous open source robotic arm with 4 degrees of freedom.  
